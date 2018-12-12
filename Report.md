@@ -2,26 +2,7 @@
 
 We participated in the Meinian health data challenge hosted by [Tianchi](https://tianchi.aliyun.com/competition/introduction.htm?raceId=231654). This challenge is about predicting the risk of hypertension and hyperlipidemia, which is the cause of many diseases including stroke and coronary heart disease. Meinian is one of China's largest physical examination and medical services companies. With enough physical examination data, this challenge intends to see if other indicators can help us make predictions on hypertension and hyperlipidemia. 
 
-We (Wei, Jiarui, Zhengyang, and me) participated in the first round of the competition, ranking [21st](https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.11165320.0.0.3e4a2df51As3pH&season=0&raceId=231654&pageIndex=2) over 3152 teams (top 1%). The following is out main ideas.
-
-```mermaid
-graph TD
-A[Raw Numerical Features] -->B(handling missing values & anomlies)
-
-H[Raw Text Features] --> B
-B --> C[Numerical Features] 
-B --> D[Text Features]
-D -->|Contain numbers| E(Convert <br> to numerical)
-D -->|Categorical| F(Segmenation) 
-D -->|Long texts| F
-F --> G(Vectorization)
-G --> I(Clustering)
-C --> J(Model selection)
-E --> J
-I --> J
-J --> K(Bagging)
-
-```
+We (Wei, Jiarui, Zhengyang, and me) participated in the first round of the competition, ranking [21st](https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.11165320.0.0.3e4a2df51As3pH&season=0&raceId=231654&pageIndex=2) over 3152 teams (top 1%). 
 
 ## Preprocess of the Data
 
